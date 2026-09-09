@@ -5,17 +5,18 @@
   <style>
   body {
     margin: 0;
-    background-color: #f3f4f6; /* 背景を少し暗くしてカレンダーを目立たせる */
-    display: flex;             /* 中央揃えにするための魔法のコード */
+    background-color: #f3f4f6;/* 背景を少し暗くしてカレンダーを目立たせる */
+    display: flex; /* 中央揃えにするための魔法のコード */
     justify-content: center;   /* 左右のど真ん中 */
-    align-items: center;       /* 上下のど真ん中 */
-    min-height: 100vh;         /* 画面全体の高さを確保 */
+    align-items: flex-start;   /* 上下を「上揃え」に変更 */
+    min-height: 100vh;
   }
   iframe {
-    width: 1000px;             /* 横幅を1000pxでガッチリ固定（伸びない） */
-    height: 600px;             /* 高さを固定 */
+    width: 1000px; 　/* 横幅を1000pxでガッチリ固定（伸びない） */
+    height: 600px; 　/* 高さを固定 */
     border: none;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* カレンダーの周りに少し影をつける */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);　/* カレンダーの周りに少し影をつける */
+    margin-top: 15px;          /* 上に15pxだけ余白を作ってバランスを取る */
   }
 </style>
 
