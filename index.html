@@ -5,14 +5,17 @@
   <style>
   body {
     margin: 0;
-    padding: 0;
-    background-color: #fff;
+    background-color: #f3f4f6; /* 背景を少し暗くしてカレンダーを目立たせる */
+    display: flex;             /* 中央揃えにするための魔法のコード */
+    justify-content: center;   /* 左右のど真ん中 */
+    align-items: center;       /* 上下のど真ん中 */
+    min-height: 100vh;         /* 画面全体の高さを確保 */
   }
   iframe {
-    width: 100%;
-    height: 630px;
+    width: 1000px;             /* 横幅を1000pxでガッチリ固定（伸びない） */
+    height: 600px;             /* 高さを固定 */
     border: none;
-    display: block;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* カレンダーの周りに少し影をつける */
   }
 </style>
 
